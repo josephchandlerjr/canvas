@@ -1,5 +1,12 @@
 
 
+
+/**
+* rotate a figure in place
+* @param {CanvasRenderingContext2D} cx
+* @param {Vec} around 
+* @param {Number} radians
+*/
 function rotateAround(cx, around, radians){
     cx.translate(around.x, around.y); //move origin to rotation point
     cx.rotate(radians); // rotate
@@ -8,7 +15,7 @@ function rotateAround(cx, around, radians){
 
 
 /**
-* Draws a star using the given context
+* Draw a star using the given context
 * @param {CanvasRenderingContext2D} cx
 * @param {Vec} center
 * @param {Number} radius
